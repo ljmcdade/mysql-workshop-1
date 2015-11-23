@@ -1,0 +1,12 @@
+
+alter table Account  add column (id INT, email varchar(255), password varchar (40), createdOn datetime, modifiedOn datetime); 
+alter table AddressBook  add column (id INT, accountId INT, createdOn datetime, modifiedOn datetime);
+alter table Entry  add column (id INT, addressBookId INT, firstName varchar(255), lastName varchar (255), birthday datetime, type ENUM('string'), subtype ENUM('string'), contentLineOne varchar(255), contentLineTwo varchar(255), contentLineThree varchar (255), contentLineFour varchar(255), contentLineFive varchar(255));
+alter table Entry modify addressbookId  INT AUTO_INCREMENT PRIMARY KEY;
+alter table AddressBook  drop primary key;
+alter table AddressBook  modify accountId  INT;
+alter table AddressBook  modify id  INT AUTO_INCREMENT PRIMARY KEY;
+alter table Entry  add addressBookId INT;  
+alter table Entry  modify id  INT AUTO_INCREMENT PRIMARY KEY;
+alter table Entry  modify type ENUM ('home', 'work', 'other'); 
+alter table Entry  modify subtype ENUM ('phone', 'address', 'email'); 
