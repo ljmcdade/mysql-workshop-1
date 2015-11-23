@@ -1,0 +1,4 @@
+ use decodemtl_addressbook;  
+ create table decodemtl_addressbook (Account varchar(100), AddressBook varchar(100), Entry varchar(100), Test varchar(100));
+ show table;
+describe decodemtl_addressbook; 
