@@ -2,3 +2,12 @@
  create table decodemtl_addressbook (Account varchar(100), AddressBook varchar(100), Entry varchar(100), Test varchar(100));
  show table;
 describe decodemtl_addressbook; 
+
+corrected:
+
+create table Account;
+create table AddressBook;
+create table Entry;
+create table Test;
+
+show tables;
