@@ -1,0 +1,12 @@
+Barn with Chickens:
+# of roosters
+# of hens
+# of chicks
+chicks coming of age date
+
+columns:
+
+date hatched (where you're starting from)
+gender m/f (gives hens vs roosters)
+chickComingOfAge (tells you whether chick or grown at any given time)
+processing date (tells you whether they're still alive -- so sad for this vegetarian)
